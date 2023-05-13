@@ -22,6 +22,7 @@ public class RandomSoThapPhanGUI extends javax.swing.JPanel {
         this.regex_double = "[+-]?((\\d+(\\.\\d*)?)|(\\.\\d+))([Ee][+-]?\\d+)?";
         this.regex_integer = "[+-]?\\d+";
         this.sinhSoThapPhan = new RandomSoThapPhan();
+        aloalo
     }
 
     /**
