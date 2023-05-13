@@ -28,19 +28,6 @@ public class RandomSoThapPhan {
         return ketQua;
     }
 
-    public BigDecimal sinh(BigDecimal soDau, BigDecimal soCuoi) {
-        try {
-            if (soCuoi.compareTo(soDau) < 0) {
-                throw new ArithmeticException("Lỗi khoảng cách. Số cuối nhỏ hơn số đầu.");
-            }
-            BigDecimal khoangCach = soCuoi.subtract(soDau);
-            BigDecimal khoangCachNho = new BigDecimal(sinh0Toi1());
-            BigDecimal soNgauNhien = khoangCach.multiply(khoangCachNho).add(soDau).setScale(18, RoundingMode.HALF_UP);
-            return soNgauNhien;
-        } catch (ArithmeticException loiKhoangCach) {
-            throw loiKhoangCach;
-        }
-    }
 
     public BigDecimal sinh(BigDecimal soDau, BigDecimal soCuoi, BigInteger soChuSoLamTron) {
         try {
